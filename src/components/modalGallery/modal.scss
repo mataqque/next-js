@@ -1,0 +1,52 @@
+.modal-gallery {
+	width: 100%;
+	position: fixed;
+	height: 100vh;
+	background-color: black;
+	z-index: 50;
+	padding: 1rem;
+	.hidden {
+		animation: hideModal 0.5s forwards;
+	}
+	@keyframes hideModal {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	.controlls {
+		width: 100%;
+		height: 4rem;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.363);
+		padding: 0 1.5rem;
+		cursor: pointer;
+		.btn-close {
+			padding: 1rem;
+			.icon-close {
+				width: 1.5rem;
+				height: 1.5rem;
+				position: relative;
+			}
+		}
+	}
+	.content-image {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.img-gallery {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
+	}
+}

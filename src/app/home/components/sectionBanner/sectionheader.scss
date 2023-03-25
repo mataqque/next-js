@@ -1,0 +1,248 @@
+.section-banner {
+	// height: 100vh;
+	position: relative;
+	.circle-position-left {
+		bottom: 10%;
+	}
+	.panel {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		display: flex;
+	}
+	.content-title {
+		position: relative;
+		top: -10vw;
+		z-index: 3;
+	}
+	.text-fourth {
+		color: #7f8fa3;
+	}
+	.trigger-second-section,
+	.trigger-third-section,
+	.trigger-fourth-section {
+		position: absolute;
+		width: 1rem;
+		bottom: 60%;
+		height: 1rem;
+	}
+	.img-fans {
+		transform-origin: bottom;
+	}
+	.controlls {
+		@media (max-width: 500px) {
+			flex-direction: row-reverse;
+		}
+		button {
+			line-height: 1;
+		}
+		.icon-down-signal {
+			width: 1rem;
+			height: 1rem;
+			background: black;
+		}
+	}
+	.panel {
+		.img-1 {
+			z-index: 2;
+			pointer-events: none;
+			object-fit: cover;
+			object-position: bottom;
+			@media (max-width: 500px) {
+			}
+		}
+		.img-2 {
+			z-index: 4;
+			object-fit: cover;
+			pointer-events: none;
+			transform-origin: bottom;
+			@media (max-width: 500px) {
+				height: 140vw;
+			}
+		}
+	}
+	.bg-gradientfans {
+		background: rgb(108, 140, 147);
+		background: -moz-linear-gradient(0deg, rgba(108, 140, 147, 1) 0%, rgba(165, 188, 193, 1) 59%, rgba(202, 218, 222, 1) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(108, 140, 147, 1) 0%, rgba(165, 188, 193, 1) 59%, rgba(202, 218, 222, 1) 100%);
+		background: linear-gradient(0deg, rgba(108, 140, 147, 1) 0%, rgba(165, 188, 193, 1) 59%, rgba(202, 218, 222, 1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c8c93",endColorstr="#cadade",GradientType=1);
+	}
+	.panel-fans {
+		height: 50vw;
+	}
+
+	.section-family,
+	.section-family2,
+	.section-fans,
+	.section-build {
+		height: 65vw;
+		@media (max-width: 1400px) {
+			height: 100vh;
+			min-height: 68rem;
+		}
+		@media (max-width: 1100px) {
+			height: 100vh;
+			min-height: 50rem;
+		}
+		@media (max-width: 500px) {
+			height: 174vw;
+			.content-scene {
+				height: 120vw;
+			}
+		}
+	}
+	.section-bike {
+		background: linear-gradient(5deg, rgba(73, 83, 143, 1) 0%, rgba(87, 96, 153, 1) 35%, rgba(116, 124, 179, 1) 100%);
+		height: 60vw;
+	}
+	.section-family2 {
+		.component-title {
+			@media (max-width: 500px) {
+				top: 40vw;
+			}
+		}
+	}
+	.section-fans {
+		.component-title {
+			@media (max-width: 500px) {
+				top: 7rem;
+			}
+		}
+	}
+	.section-build {
+		.component-title {
+			@media (max-width: 500px) {
+				top: 40vw;
+			}
+		}
+		.panel .img-2 {
+			@media (max-width: 500px) {
+				bottom: 0vw;
+			}
+		}
+	}
+	.section-bike {
+		@media (max-width: 500px) {
+			height: 140vw;
+		}
+		.img-2 {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: bottom;
+			top: 15vw;
+			@media (max-width: 1400px) {
+				top: 4vw;
+			}
+		}
+		.content-title {
+			@media (max-width: 500px) {
+				top: 0vw;
+			}
+		}
+		.middle-circle {
+			opacity: 0.7;
+			width: 48rem;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			top: 3vw;
+			position: absolute;
+			z-index: 0;
+			@media (max-width: 1400px) {
+				width: 40vw;
+				top: 30vw;
+			}
+			@media (max-width: 900px) {
+				width: 60vw;
+				top: 0vw;
+			}
+		}
+		.img-2 {
+			z-index: 10;
+			position: relative;
+		}
+		.panel {
+		}
+	}
+	.section-emotion {
+		.panel {
+			@media (max-width: 500px) {
+				height: 160vw;
+			}
+		}
+		.component-title {
+			@media (max-width: 500px) {
+				top: 15vw;
+			}
+		}
+		.img-1 {
+			@media (max-width: 500px) {
+				height: 100%;
+			}
+		}
+		.img-2 {
+			@media (max-width: 500px) {
+				top: 20vw;
+			}
+		}
+	}
+	.section-transport {
+		height: 60vw;
+		background: linear-gradient(0deg, rgba(199, 118, 13, 1) 0%, rgba(199, 118, 13, 1) 26%, rgba(244, 198, 81, 1) 100%);
+		--sizeStar: 30rem;
+		@media (max-width: 1400px) {
+			--sizeStar: 24rem;
+		}
+		@media (max-width: 900px) {
+			--sizeStar: 19rem;
+		}
+		@media (max-width: 500px) {
+			--sizeStar: 40vw;
+			height: 160vw;
+		}
+		.star {
+			width: var(--sizeStar);
+			height: var(--sizeStar);
+			&.center {
+				width: calc(var(--sizeStar) * 1.4);
+				height: calc(var(--sizeStar) * 1.4);
+			}
+		}
+		.top-left {
+			top: calc(var(--sizeStar) * -0.3);
+			left: calc(var(--sizeStar) * -0.3);
+		}
+		.top-right {
+			top: calc(var(--sizeStar) * -0.3);
+			right: calc(var(--sizeStar) * -0.3);
+		}
+		.bottom-left {
+			bottom: calc(var(--sizeStar) * -0.3);
+			left: calc(var(--sizeStar) * -0.3);
+		}
+		.bottom-right {
+			bottom: calc(var(--sizeStar) * -0.3);
+			right: calc(var(--sizeStar) * -0.3);
+		}
+		.center {
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+		}
+		.component-title {
+			@media (max-width: 500px) {
+				top: 6rem;
+			}
+		}
+	}
+	.section-build {
+		@media (min-width: 1400px) {
+			height: 55vw;
+		}
+	}
+}

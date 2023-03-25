@@ -1,0 +1,41 @@
+.content-whatsapp {
+	width: 6rem;
+	height: 6rem;
+	position: fixed;
+	background-color: transparent;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 20;
+	cursor: pointer;
+	@media (max-width: 500px) {
+		width: 4rem;
+		height: 4rem;
+	}
+	.content-loader {
+		// pointer-events: none;
+	}
+	.svg-whatsapp {
+		position: relative !important;
+		width: 100% !important;
+		height: 100% !important;
+		&.hidden {
+			display: flex !important;
+		}
+		& > div {
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+	.modal_form__content {
+		transition: all 0.3s ease-in-out;
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	&.active {
+		.modal_form__content {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}

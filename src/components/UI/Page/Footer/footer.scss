@@ -1,0 +1,47 @@
+main {
+	z-index: 2;
+	position: relative;
+	background-color: white;
+}
+footer {
+	position: relative;
+	bottom: 0;
+	z-index: 0;
+	.icon-brand {
+		-webkit-mask-position: left;
+		@media (max-width: 900px) {
+			-webkit-mask-position: center;
+		}
+		@media (max-width: 500px) {
+			-webkit-mask-position: left;
+		}
+	}
+	.icon-complaintment {
+		background: #fafafa5c;
+	}
+	.content-buttons-links {
+		justify-content: space-between;
+		@media (max-width: 1400px) {
+			flex-direction: column;
+			padding: 1rem 0;
+		}
+		@media (max-width: 500px) {
+			padding: 0;
+		}
+		@media (max-width: 100px) {
+			justify-content: center;
+		}
+		@media (max-width: 800px) {
+			.items-center {
+				justify-content: center;
+				align-items: center;
+			}
+			.text-gray-10 {
+				text-align: center !important;
+			}
+			.rights {
+				margin-top: 1rem;
+			}
+		}
+	}
+}

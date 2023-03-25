@@ -1,0 +1,22 @@
+.icon-brochure {
+	top: 2px;
+	position: relative;
+	width: 1.2rem;
+	height: 1.2rem;
+	@media (max-width: 1100px) {
+		top: 0px;
+		width: 1.4rem;
+		height: 1.4rem;
+	}
+}
+.link-brochure {
+	@media (max-width: 1100px) {
+		align-items: center;
+		display: flex;
+		top: 0px;
+		position: relative;
+	}
+	@media (max-width: 950px) {
+		justify-content: center;
+	}
+}

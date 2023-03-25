@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+  <g id="Grupo_840" data-name="Grupo 840" transform="translate(22 -11812)">
+    <circle id="Elipse_101" data-name="Elipse 101" cx="19.5" cy="19.5" r="19.5" transform="translate(-22 11812)" fill="#fff"/>
+    <g id="Grupo_839" data-name="Grupo 839" transform="translate(-10 11824)">
+      <g id="Grupo_838" data-name="Grupo 838" transform="translate(0 0)">
+        <path id="Trazado_696" data-name="Trazado 696" d="M501.285,9.046v4.948a3.944,3.944,0,1,1-7.887,0V9.046" transform="translate(-493.397 -8.78)" fill="none" stroke="#ffa724" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Línea_116" data-name="Línea 116" y1="6.601" transform="translate(3.944 9.194)" fill="none" stroke="#ffa724" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Línea_117" data-name="Línea 117" y2="5.367" transform="translate(3.944 0.266)" fill="none" stroke="#ffa724" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_697" data-name="Trazado 697" d="M563.306,23.295V7.792a.3.3,0,0,1,.5-.221l.469.387a10.492,10.492,0,0,1,3.856,8.084v2.284h-4.758" transform="translate(-551.257 -7.5)" fill="none" stroke="#ffa724" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

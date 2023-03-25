@@ -1,0 +1,152 @@
+.content-popup {
+	top: -61%;
+	width: 38rem;
+	height: 24rem;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.116);
+	@media (max-width: 500px) {
+		width: 90vw;
+		padding: 1rem 1.5rem;
+	}
+	.background {
+		position: absolute;
+		top: 0%;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.thanks {
+		position: relative;
+		z-index: 2;
+	}
+	.desktop {
+		@media (max-width: 500px) {
+			display: none;
+		}
+	}
+	.movil {
+		@media (min-width: 500px) {
+			display: none;
+		}
+	}
+	.title {
+		width: auto !important;
+		font-size: 2.5rem;
+		color: white;
+		text-align: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		@media (max-width: 500px) {
+			font-size: 1.9rem;
+		}
+	}
+	.sub-title {
+		color: white;
+		font-size: 1.1rem;
+		text-align: center;
+		margin-bottom: 0.3rem;
+		@media (max-width: 500px) {
+			font-size: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+	.contact {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 1rem;
+		@media (max-width: 500px) {
+			margin-top: 0rem;
+		}
+	}
+	.icon {
+		width: 4rem;
+		height: 4rem;
+		@media (max-width: 500px) {
+			width: 3.3rem;
+			height: 3.3rem;
+		}
+	}
+	.icon-whatsapp {
+		margin-right: 1rem;
+	}
+	.container-check {
+		width: 4rem;
+		height: 4rem;
+	}
+	.loader-container {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		border-radius: 100%;
+		margin: auto;
+		border-radius: 100%;
+		border: 1px solid white;
+		.loading {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: var(--Primarycotiza);
+			border-radius: 100%;
+		}
+		.loading::after,
+		.loading::before {
+			content: '';
+			animation-fill-mode: forwards;
+			background: white;
+			position: absolute;
+		}
+		.loading::after {
+			left: 24%;
+			transform: rotate(45deg) scaleX(0);
+			transform-origin: 0% 100%;
+			top: 42%;
+			width: 30%;
+			height: 7%;
+			animation: 0.2s successBefore forwards ease-out;
+			border-radius: 0.3vw 0px 0vw 0.3vw;
+		}
+		.loading::before {
+			left: 47%;
+			top: 63%;
+			width: 46%;
+			height: 7%;
+			transform: rotate(-45deg) scaleX(0);
+			transform-origin: 0% 100%;
+			animation: 0.2s successAfter forwards 0.2s ease-out;
+			border-radius: 0vw 0.3vw 0.3vw 0vw;
+		}
+		@keyframes successAfter {
+			0% {
+				transform: rotate(-45deg) scaleX(0);
+			}
+			100% {
+				transform: rotate(-45deg) scaleX(1);
+			}
+		}
+		@keyframes successBefore {
+			0% {
+				transform: rotate(45deg) scaleX(0);
+			}
+			100% {
+				transform: rotate(45deg) scaleX(1);
+			}
+		}
+	}
+
+	.icon-check {
+		width: 5rem;
+		height: 5rem;
+		@media (max-width: 500px) {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+}
